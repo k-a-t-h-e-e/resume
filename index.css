@@ -135,7 +135,7 @@ button:hover {
 }
 
 .section h3 {
-    margin: 10px 0;
+    margin: 5px 0;
     letter-spacing: 1px;
     font-size: 15px;
     font-weight: 400;
@@ -147,9 +147,13 @@ button:hover {
     font-size: 15px;
     font-weight: 400;
 }
-
-.section li {
+li{
     display: inline-block;
+    font-size: 12px;
+    margin: 0;
+}
+
+.left>.section li { 
     letter-spacing: 1px;
     font-size: 15px;
     font-weight: 300;
@@ -157,12 +161,25 @@ button:hover {
     margin-bottom: 10px;
 }
 
-.section li::before {
+.left>.section li::before {
     content: "•";
     color: #007e69
 }
 
+.right>.section li::before {
+    content: "•";
+    color: #007e69
+}
+
+.right>.section li {     
+    font-weight: 400;
+    padding-right: 5px;
+    padding-bottom:5px;
+}
+
+
 .lan {
+    padding: 5px 0px 0px 20px;
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
@@ -351,8 +368,11 @@ button:hover {
         display: none;
     }
     .la li {
-        font-size: 12px;
-        margin: 0;
+        font-size: 12px     !important;
+        letter-spacing: 1px;        
+        font-weight: 300;
+        padding-right: 0px !important;
+        margin-bottom: 0px !important;        
     }
 }
 
